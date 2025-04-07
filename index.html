@@ -23,189 +23,405 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
+                    <h1>Спецификации и стандарты</h1>
                     <img
                         class="r-stretch"
-                        src="https://goqr.me/"
+                        src="https://ktkv-presentations.github.io/uidev-12"
                         data-type="qrcode" />
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <section>
+                        <h3>Спецификации и стандарты</h3>
+                        <h4>ECMAScript (ES)</h4>
+                        <p>
+                            задаёт правила синтаксиса, поведение и основные
+                            возможности языка
+                        </p>
+                        <div>
+                            <em>
+                                является основой для нескольких языков, включая
+                                <code class="plaintext">JavaScript</code>
+                                ,
+                                <code class="plaintext">
+                                    JScript (Microsoft)
+                                </code>
+                                ,
+                                <code class="plaintext">
+                                    ActionScript (Adobe)
+                                </code>
+                            </em>
+                        </div>
+                        <hr />
+                        <h4>Основные версии ECMAScript</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h5>ES3 (1999)</h5>
+                                <p>стабилизация языка</p>
+                            </div>
+                            <div class="border-b">
+                                <h5>ES5 (2009)</h5>
+                                <p>
+                                    strict mode, методы для работы с массивами
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h5>ES6 (ES2015)</h5>
+                                <p>
+                                    классы, стрелочные функции, модули,
+                                    константы, ...
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h5>ES7 (ES2016)</h5>
+                                <p>регулярные обновления</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        dat
+                        <h1>HTML Living Standard</h1>
+                        <p>
+                            стандарт для описания структуры веб-страниц и
+                            взаимодействия с ними в браузере
+                        </p>
+                        <em>
+                            описывает элементы, их атрибуты и правила их
+                            взаимодействия с другими элементами
+                        </em>
+                    </section>
+                    <section>
+                        <iframe
+                            src="https://html.spec.whatwg.org/multipage/"
+                            frameborder="0"
+                            class="r-stretch"></iframe>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Глобальные объекты браузера</h1>
+                        <h3><code class="plaintext">window</code></h3>
+                        <p>
+                            центральный объект, который представляет саму
+                            вкладку или окно браузера
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Представление вкладки браузера</h3>
+                        <ul>
+                            <li>
+                                Каждая вкладка представлена как объект
+                                <code>window</code>
+                            </li>
+                            <li>
+                                <code>window</code>
+                                позволяет взаимодействовать с характеристиками
+                                окна (например, размеры окна, фокусировка).
+                            </li>
+                        </ul>
+                        <em>
+                            В основном слушатели, влиять на само окно браузера
+                            было бы небезопасно
+                        </em>
+                    </section>
+                    <section>
+                        <h3>Глобальное пространство имён для JavaScript</h3>
+                        <p>
+                            все глобальные переменные и функции автоматически
+                            становятся свойствами объекта
+                            <code class="plaintext">window</code>
+                        </p>
+                        <em>В коде</em>
+                        <pre><code data-trim class="js">
+let myVariable = 'Hello';
+                        </code></pre>
+                        <hr />
+                        <em>В браузере</em>
+                        <pre><code data-trim class="js">
+console.log(window.myVariable);  // 'Hello'
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>API браузера</h1>
+                        <ul>
+                            <li>Таймеры</li>
+                            <li>Всплывающие окна</li>
+                            <li>Хранилища данных</li>
+                            <li>Информация о браузере</li>
+                            <li>Обработка событий</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>
+                            Объект
+                            <code class="plaintext">document</code>
+                        </h1>
+                        <p>
+                            объект, который представляет сам HTML-документ,
+                            загруженный в окно браузера
+                        </p>
+                        <em>
+                            Позволяет взаимодействовать с самой страницей сайта
+                        </em>
+                        <pre><code data-trim class="js">
+const heading = document.getElementById('heading');
+heading.textContent = 'Hello, World!';
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h1>иерархия</h1>
+                        <div class="border-b">
+                            <h4>window</h4>
+                            <div class="border-c">
+                                <h5>document</h5>
+                                <div class="border-g">
+                                    <h6>html</h6>
+                                    <div class="border-y">
+                                        <h4>head</h4>
+                                        <h5>body</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Работа с элементами DOM</h1>
+                        <em>
+                            Чтобы работать с элементами на странице, сначала
+                            нужно найти их в DOM
+                        </em>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4><code>getElementById</code></h4>
+                                <p>
+                                    Возвращает первый элемент, который
+                                    соответствует указанному id
+                                </p>
+                            </div>
+
+                            <div class="border-b">
+                                <h4><code>getElementsByTagName(tag)</code></h4>
+                                <p>
+                                    находит
+                                    <code>все</code>
+                                    элементы по указанному тегу tag
+                                </p>
+                            </div>
+                            <div class="border-b col-span-2">
+                                <h4>
+                                    <code>
+                                        getElementsByClassName(className)
+                                    </code>
+                                </h4>
+                                <p>
+                                    находит
+                                    <b>все</b>
+                                    элементы, которые содержат указанный класс
+                                    className
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <em>Однако лучше использовать</em>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4><code>querySelector(selector)</code></h4>
+                                <p>
+                                    позволяет найти
+                                    <b>первый элемент</b>
+                                    , который соответствует указанному
+                                    CSS-селектору
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4><code>querySelectorAll(selector)</code></h4>
+                                <p>
+                                    находит
+                                    <code>все</code>
+                                    элементы, соответствующие указанному
+                                    CSS-селектору
+                                </p>
+                            </div>
+                        </div>
+                        <pre><code data-trim class="js">
+let firstButton = document.querySelector(".button");
+let buttons = document.querySelectorAll(".button");
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h1>Чтение и изменение содержимого</h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4><code>element.innerText</code></h4>
+                                <p>
+                                    Работает с текстовым содержимым элемента,
+                                    исключая все HTML теги
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4><code>element.textContent</code></h4>
+                                <p>
+                                    возвращает весь текст, включая скрытые
+                                    элементы
+                                </p>
+                            </div>
+                            <div class="border-b col-span-2">
+                                <h4><code>element.innerHTML</code></h4>
+                                <p>
+                                    позволяет получить или изменить
+                                    HTML-содержимое элемента
+                                </p>
+                            </div>
+                        </div>
+                        <pre><code data-trim class="js">
+let paragraph = document.querySelector("p");
+console.log(paragraph.innerText); // Чтение текста
+paragraph.innerText = "Новый текст!"; // Установка нового текста
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h1>Изменение стилей</h1>
+                        <h4>
+                            через атрибут
+                            <code>style</code>
+                        </h4>
+                        <p>
+                            позволяет изменить стили элемента непосредственно
+                            JavaScript'ом через inline стили
+                        </p>
+                        <pre><code data-trim class="js">
+let div = document.querySelector("div");
+div.style.backgroundColor = "red"; // Установка фона
+div.style.fontSize = "20px"; // Установка размера шрифта
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h1>Изменение стилей</h1>
+                        <h4>
+                            через классы (
+                            <code>classList</code>
+                            )
+                        </h4>
+                        <p>
+                            позволяет добавлять, удалять и проверять наличие
+                            классов в элементах
+                        </p>
+                        <em>
+                            Сами стили пишутся отдельно в
+                            <code>css</code>
+                            файле
+                        </em>
+                    </section>
+                    <section>
+                        <h4>
+                            Методы
+                            <code>classList</code>
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h5>
+                                    <code class="javascript">
+                                        add(className)
+                                    </code>
+                                </h5>
+                                <p>добавляет класс</p>
+                            </div>
+                            <div class="border-b">
+                                <h5>
+                                    <code class="javascript">
+                                        remove(className)
+                                    </code>
+                                </h5>
+                                <p>удаляет класс</p>
+                            </div>
+                            <div class="border-b">
+                                <h5>
+                                    <code class="javascript">
+                                        toggle(className)
+                                    </code>
+                                </h5>
+                                <p>
+                                    переключает класс (добавляет, если его нет,
+                                    и удаляет, если он есть)
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h5>
+                                    <code class="javascript">
+                                        contains(className)
+                                    </code>
+                                </h5>
+                                <p>проверяет, есть ли класс у элемента</p>
+                            </div>
+                        </div>
+                        <pre><code data-trim class="js">
+let div = document.querySelector("div");
+div.classList.add("highlight"); // Добавить класс
+div.classList.remove("highlight"); // Удалить класс
+div.classList.toggle("highlight"); // Переключить класс
+console.log(div.classList.contains("highlight")); // Проверка наличия класса
+                    </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Обработчики событий</h1>
+                        <h4>event handlers</h4>
+                        <p>
+                            функции, которые запускаются в ответ на действия
+                            пользователя
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Подключение обработчиков</h1>
+                        <h4>ТАК ДЕЛАТЬ НЕ НАДО!</h4>
+                        <pre><code data-trim class="html">
+&lt;button onclick="alert('Нажато!')"&gt;Нажми меня&lt;/button&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Подключение обработчиков</h1>
+                        <h4>
+                            Через свойство элемента
+                            <code>element.onclick</code>
+                        </h4>
+                        <pre><code data-trim class="js">
+const button = document.querySelector('button');
+button.onclick = () =&gt; {
+  alert('Нажато!');
+};
+                        </code></pre>
+                        <div class="border-r">
+                            <b>Можно будет подключить только один слушатель</b>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Подключение обработчиков</h1>
+                        <h4>Через <code>addEventListener</code></h4>
+                        <pre><code data-trim class="js">
+const button = document.querySelector('button');
+button.addEventListener('click', () =&gt; {
+  alert('Нажато!');
+});
+                        </code></pre>
+                        <div class="border-g">
+                            <b>Можно подключить несколько слушателей</b>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Снятие обработчика через <code>removeEventListener</code></h1>
+                        <pre><code data-trim class="js">
+function handleClick() {
+  console.log('Клик!');
+}
+const button = document.querySelector('button');
+button.addEventListener('click', handleClick);
+
+button.removeEventListener('click', handleClick);
+                        </code></pre>
+                    </section>
                 </section>
             </div>
         </div>
